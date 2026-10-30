@@ -1,0 +1,47 @@
+{
+ "images": "images.npy",
+ "labels": "labels.npy",
+ "split_path": "clock_split.npz",
+ "out_dir": "runs/part1",
+ "seed": 42,
+ "max_train": 0,
+ "epochs": 15,
+ "batch_size": 128,
+ "lr": 0.001,
+ "weight_decay": 0.0001,
+ "pool": 4,
+ "cudnn_benchmark": false,
+ "mode": "sanity",
+ "approaches": [
+  "classification",
+  "regression",
+  "multihead",
+  "trig"
+ ],
+ "n_classes": [
+  12,
+  24,
+  60,
+  720
+ ],
+ "reg_losses": [
+  "mse",
+  "l1",
+  "smoothl1"
+ ],
+ "alphas": [
+  0.5,
+  1.0,
+  2.0
+ ],
+ "minute_modes": [
+  "cls",
+  "reg"
+ ],
+ "trig_norm": [
+  0,
+  1
+ ],
+ "overfit_n": 512,
+ "overfit_epochs": 60
+}
