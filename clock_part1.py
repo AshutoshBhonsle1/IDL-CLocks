@@ -14,7 +14,7 @@ are ever loaded here; the test set is never touched.
 Run on a GPU machine
     python clock_part1.py --images images150.npy --labels labels.npy --epochs 40
     python clock_part1.py --mode sanity                      # data checks only (saves PNGs, prints md5)
-    python clock_part1.py --mode overfit                     # can the model memorise 512 images?
+    python clock_part1.py --mode overfit                     # can the model memorise ONE fixed batch of 64 images?
     python clock_part1.py --approaches trig multihead --epochs 40
     nohup python clock_part1.py --epochs 40 > run.log 2>&1 &   # survives a closed SSH session
 
@@ -74,8 +74,8 @@ class Config:
     minute_modes: List[str] = field(default_factory=lambda: ["cls", "reg"])
     trig_norm: List[int] = field(default_factory=lambda: [0, 1])
     # overfit test
-    overfit_n: int = 512
-    overfit_epochs: int = 60
+    overfit_n: int = 64                     # size of the single fixed batch
+    overfit_steps: int = 500                # optimizer steps (constant LR, no dropout / weight decay / scheduler)
 
 
 def parse_args(argv=None) -> Config:
@@ -102,7 +102,7 @@ def parse_args(argv=None) -> Config:
     p.add_argument("--minute_modes", nargs="+", default=d.minute_modes, choices=["cls", "reg"])
     p.add_argument("--trig_norm", nargs="+", type=int, default=d.trig_norm, help="0 = raw linear, 1 = unit-normalised pairs")
     p.add_argument("--overfit_n", type=int, default=d.overfit_n)
-    p.add_argument("--overfit_epochs", type=int, default=d.overfit_epochs)
+    p.add_argument("--overfit_steps", type=int, default=d.overfit_steps)
     return Config(**vars(p.parse_args(argv)))
 
 
@@ -522,19 +522,37 @@ def run_trig(cfg, data, device, log):
 
 # %% ----------------------------------------------------------------------- overfit test
 def overfit_test(cfg, data, device):
-    """Can the model memorise a tiny training subset? It evaluates on the SAME images. If the error does not
-    fall to a few minutes, the problem is in the data/labels/model/optimiser, not in 'too few epochs'.
-    (Memorising is possible even with wrong labels, so this does not test label alignment: use alignment_check.png.)"""
+    """Classic bug test: train on ONE small fixed batch for many steps (constant LR, no dropout, no weight decay,
+    no scheduler). A healthy pipeline drives the error to ~0 here. If it cannot, there is a bug in the data,
+    labels, model or loss, and training longer on the full data will not fix it.
+    (Memorising also works with wrong labels, so this does not test label alignment: see alignment_check.png.)"""
     idx = data.train_idx[:cfg.overfit_n]
-    loaders = {"train": make_loader(data, idx, True, cfg), "val": make_loader(data, idx, False, cfg)}
+    x = prep(torch.from_numpy(np.ascontiguousarray(data.images[idx])).unsqueeze(1), data, device)
+    y = torch.from_numpy(data.labels[idx]).to(device)
+    true = to_total_minutes(y[:, 0], y[:, 1]).float()
+    target = trig_targets(y)
+
     set_seed(cfg.seed)
-    model = TrigNet(normalize=True, pool=cfg.pool)
-    print(f"\n=== overfit test: {len(idx)} images, {cfg.overfit_epochs} epochs ===")
-    model, hist, best = fit(model, loaders, data, device, lambda o, y: F.mse_loss(o, trig_targets(y)), decode_trig,
-                            cfg.overfit_epochs, cfg.lr, 0.0)
-    print(f"\nbest error on the memorised subset: mean {best['mean_err']:.1f} min, median {best['median_err']:.1f} min")
-    print("-> if this is still above ~20 min, something is wrong beyond the epoch count." if best["mean_err"] > 20
-          else "-> the pipeline can learn; poor full-data results mean undertraining or an architecture limit.")
+    model = TrigNet(normalize=False, pool=cfg.pool).to(device)
+    for m in model.modules():
+        if isinstance(m, nn.Dropout):
+            m.p = 0.0
+    opt = torch.optim.Adam(model.parameters(), lr=cfg.lr)
+    print(f"\n=== overfit test: one fixed batch of {len(idx)} images, {cfg.overfit_steps} steps ===")
+    err = float("inf")
+    for step in range(1, cfg.overfit_steps + 1):
+        model.train()
+        opt.zero_grad()
+        loss = F.mse_loss(model(x), target)
+        loss.backward()
+        opt.step()
+        if step == 1 or step % 50 == 0:
+            model.eval()
+            with torch.no_grad():
+                err = common_sense_error(decode_trig(model(x)).float(), true).mean().item()
+            print(f"  step {step:4d} | loss {loss.item():.4f} | mean error on this batch {err:6.1f} min", flush=True)
+    print("-> the pipeline can learn: the error on the memorised batch is small." if err < 10 else
+          "-> still high after many steps on a single batch: suspect a bug (data / labels / model / loss), not the epoch count.")
 
 
 # %% ----------------------------------------------------------------------- report
