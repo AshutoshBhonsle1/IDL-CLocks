@@ -1,0 +1,707 @@
+device: cuda | NVIDIA GeForce GTX TITAN X
+metric self-test passed
+trig round-trip self-test passed
+images.npy: 405.0 MB | md5 a31a144979713db5fb3b231004127345
+labels.npy: 0.3 MB | md5 d28f2ca2990e3d91dd54c64770eb5344
+images (18000, 150, 150) uint8 | labels (18000, 2)
+hour range 0..11 | minute range 0..59
+loaded existing split from clock_split.npz
+train 14400 | val 1800 | test 1800 (test is never loaded here)
+split fingerprint (compare with teammates): [13747, 14050, 17340, 619, 3062] [3509, 2615, 7568, 1935, 17353] [5482, 16322, 13481, 3553, 7187]
+train-only normalisation: mean=0.5969 std=0.2215 (pixels divided by 255.0)
+saved runs/part1/samples.png and alignment_check.png (look at them before trusting any result)
+
+=== classification | 12 classes | CrossEntropy ===
+/local/s5187974/assignments/idl/a1/IDL-CLocks/idlclock/lib64/python3.9/site-packages/networkx/utils/backends.py:135: RuntimeWarning: networkx backend defined more than once: nx-loopback
+  backends.update(_get_backends("networkx.backends"))
+  epoch   1 | train loss 2.5083 | val loss 2.4845 | val err mean  182.3 median  183.5 min | 15.2s
+  epoch   2 | train loss 2.4856 | val loss 2.4846 | val err mean  182.0 median  183.0 min | 14.9s
+  epoch   3 | train loss 2.4853 | val loss 2.4848 | val err mean  182.0 median  183.0 min | 14.9s
+  epoch   4 | train loss 2.4851 | val loss 2.4850 | val err mean  182.0 median  183.0 min | 14.9s
+  epoch   5 | train loss 2.4850 | val loss 2.4852 | val err mean  182.0 median  183.0 min | 15.0s
+  epoch   6 | train loss 2.4850 | val loss 2.4853 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch   7 | train loss 2.4850 | val loss 2.4853 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch   8 | train loss 2.4849 | val loss 2.4854 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch   9 | train loss 2.4850 | val loss 2.4855 | val err mean  184.8 median  186.5 min | 15.6s
+  epoch  10 | train loss 2.4849 | val loss 2.4854 | val err mean  184.8 median  186.5 min | 15.6s
+  epoch  11 | train loss 2.4850 | val loss 2.4855 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  12 | train loss 2.4849 | val loss 2.4855 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  13 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  14 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  15 | train loss 2.4849 | val loss 2.4855 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  16 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  17 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  18 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  19 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  20 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  21 | train loss 2.4849 | val loss 2.4857 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  22 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  23 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  24 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.5s
+  epoch  25 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  26 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  27 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  28 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  29 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  30 | train loss 2.4849 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  31 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  32 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  33 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  34 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  35 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  36 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  37 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  38 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  39 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  40 | train loss 2.4848 | val loss 2.4856 | val err mean  184.8 median  186.5 min | 15.4s
+[logged] classification | 12 classes | val mean err 182.02 min
+  WARNING: at chance level (random guessing = ~180 min). This run did not learn.
+
+=== classification | 24 classes | CrossEntropy ===
+  epoch   1 | train loss 3.1915 | val loss 3.1788 | val err mean  184.7 median  186.5 min | 15.5s
+  epoch   2 | train loss 3.1785 | val loss 3.1788 | val err mean  184.7 median  186.5 min | 15.3s
+  epoch   3 | train loss 3.1783 | val loss 3.1790 | val err mean  184.7 median  186.5 min | 15.3s
+  epoch   4 | train loss 3.1782 | val loss 3.1789 | val err mean  184.7 median  186.5 min | 15.3s
+  epoch   5 | train loss 3.1782 | val loss 3.1790 | val err mean  177.2 median  174.0 min | 15.3s
+  epoch   6 | train loss 3.1781 | val loss 3.1791 | val err mean  177.2 median  174.0 min | 15.3s
+  epoch   7 | train loss 3.1781 | val loss 3.1791 | val err mean  177.2 median  174.0 min | 15.3s
+  epoch   8 | train loss 3.1781 | val loss 3.1792 | val err mean  177.2 median  174.0 min | 15.3s
+  epoch   9 | train loss 3.1781 | val loss 3.1792 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  10 | train loss 3.1781 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.4s
+  epoch  11 | train loss 3.1781 | val loss 3.1792 | val err mean  177.2 median  174.0 min | 15.3s
+  epoch  12 | train loss 3.1781 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  13 | train loss 3.1781 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  14 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  15 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.4s
+  epoch  16 | train loss 3.1781 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  17 | train loss 3.1780 | val loss 3.1794 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  18 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  19 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  20 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  21 | train loss 3.1780 | val loss 3.1794 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  22 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  23 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  24 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  25 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  26 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  27 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  28 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  29 | train loss 3.1780 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  30 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  31 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  32 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  33 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  34 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  35 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  36 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  37 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  38 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  39 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+  epoch  40 | train loss 3.1779 | val loss 3.1793 | val err mean  184.7 median  187.5 min | 15.3s
+[logged] classification | 24 classes | val mean err 177.15 min
+  WARNING: at chance level (random guessing = ~180 min). This run did not learn.
+
+=== classification | 60 classes | CrossEntropy ===
+  epoch   1 | train loss 4.1082 | val loss 4.0957 | val err mean  182.4 median  184.5 min | 15.5s
+  epoch   2 | train loss 4.0949 | val loss 4.0959 | val err mean  182.0 median  183.5 min | 15.3s
+  epoch   3 | train loss 4.0947 | val loss 4.0959 | val err mean  182.0 median  183.5 min | 15.3s
+  epoch   4 | train loss 4.0946 | val loss 4.0962 | val err mean  182.0 median  183.5 min | 15.3s
+  epoch   5 | train loss 4.0945 | val loss 4.0962 | val err mean  182.0 median  183.5 min | 15.3s
+  epoch   6 | train loss 4.0945 | val loss 4.0964 | val err mean  182.0 median  183.5 min | 15.3s
+  epoch   7 | train loss 4.0944 | val loss 4.0964 | val err mean  182.0 median  183.5 min | 15.3s
+  epoch   8 | train loss 4.0944 | val loss 4.0965 | val err mean  182.0 median  183.5 min | 15.3s
+  epoch   9 | train loss 4.0944 | val loss 4.0966 | val err mean  182.0 median  183.5 min | 15.4s
+  epoch  10 | train loss 4.0943 | val loss 4.0967 | val err mean  182.0 median  183.5 min | 15.4s
+  epoch  11 | train loss 4.0943 | val loss 4.0968 | val err mean  182.0 median  183.5 min | 15.4s
+  epoch  12 | train loss 4.0943 | val loss 4.0968 | val err mean  182.0 median  183.5 min | 15.3s
+  epoch  13 | train loss 4.0943 | val loss 4.0968 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  14 | train loss 4.0943 | val loss 4.0969 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  15 | train loss 4.0943 | val loss 4.0969 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  16 | train loss 4.0942 | val loss 4.0969 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  17 | train loss 4.0943 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  18 | train loss 4.0942 | val loss 4.0969 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  19 | train loss 4.0942 | val loss 4.0969 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  20 | train loss 4.0942 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  21 | train loss 4.0942 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.4s
+  epoch  22 | train loss 4.0942 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  23 | train loss 4.0942 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  24 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  25 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  26 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  27 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  28 | train loss 4.0941 | val loss 4.0971 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  29 | train loss 4.0941 | val loss 4.0971 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  30 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  31 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  32 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  33 | train loss 4.0941 | val loss 4.0971 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  34 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  35 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  36 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  37 | train loss 4.0941 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  38 | train loss 4.0940 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  39 | train loss 4.0940 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+  epoch  40 | train loss 4.0940 | val loss 4.0970 | val err mean  184.8 median  186.5 min | 15.3s
+[logged] classification | 60 classes | val mean err 182.02 min
+  WARNING: at chance level (random guessing = ~180 min). This run did not learn.
+
+=== classification | 720 classes | CrossEntropy ===
+  epoch   1 | train loss 6.5922 | val loss 6.5829 | val err mean  181.5 median  183.5 min | 15.6s
+  epoch   2 | train loss 6.5801 | val loss 6.5848 | val err mean  181.5 median  183.5 min | 15.3s
+  epoch   3 | train loss 6.5796 | val loss 6.5866 | val err mean  184.3 median  186.0 min | 15.3s
+  epoch   4 | train loss 6.5792 | val loss 6.5883 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch   5 | train loss 6.5788 | val loss 6.5900 | val err mean  184.3 median  186.0 min | 15.4s
+  epoch   6 | train loss 6.5784 | val loss 6.5915 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch   7 | train loss 6.5781 | val loss 6.5930 | val err mean  184.3 median  186.0 min | 15.4s
+  epoch   8 | train loss 6.5778 | val loss 6.5944 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch   9 | train loss 6.5776 | val loss 6.5957 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  10 | train loss 6.5774 | val loss 6.5969 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  11 | train loss 6.5772 | val loss 6.5980 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  12 | train loss 6.5770 | val loss 6.5991 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  13 | train loss 6.5768 | val loss 6.6000 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  14 | train loss 6.5766 | val loss 6.6010 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  15 | train loss 6.5765 | val loss 6.6019 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  16 | train loss 6.5763 | val loss 6.6026 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  17 | train loss 6.5762 | val loss 6.6033 | val err mean  184.3 median  186.0 min | 15.3s
+  epoch  18 | train loss 6.5761 | val loss 6.6040 | val err mean  184.3 median  186.0 min | 15.4s
+  epoch  19 | train loss 6.5760 | val loss 6.6046 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  20 | train loss 6.5758 | val loss 6.6051 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  21 | train loss 6.5758 | val loss 6.6057 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  22 | train loss 6.5757 | val loss 6.6063 | val err mean  179.3 median  178.5 min | 15.4s
+  epoch  23 | train loss 6.5759 | val loss 6.6065 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  24 | train loss 6.5755 | val loss 6.6069 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  25 | train loss 6.5754 | val loss 6.6072 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  26 | train loss 6.5754 | val loss 6.6075 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  27 | train loss 6.5753 | val loss 6.6078 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  28 | train loss 6.5752 | val loss 6.6080 | val err mean  184.3 median  186.0 min | 15.4s
+  epoch  29 | train loss 6.5752 | val loss 6.6082 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  30 | train loss 6.5751 | val loss 6.6083 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  31 | train loss 6.5751 | val loss 6.6085 | val err mean  184.3 median  186.0 min | 15.3s
+  epoch  32 | train loss 6.5751 | val loss 6.6086 | val err mean  180.0 median  179.0 min | 15.4s
+  epoch  33 | train loss 6.5750 | val loss 6.6086 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  34 | train loss 6.5750 | val loss 6.6087 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  35 | train loss 6.5750 | val loss 6.6088 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  36 | train loss 6.5750 | val loss 6.6088 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  37 | train loss 6.5750 | val loss 6.6088 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  38 | train loss 6.5749 | val loss 6.6088 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  39 | train loss 6.5749 | val loss 6.6088 | val err mean  180.0 median  179.0 min | 15.3s
+  epoch  40 | train loss 6.5749 | val loss 6.6088 | val err mean  180.0 median  179.0 min | 15.3s
+[logged] classification | 720 classes | val mean err 179.30 min
+  WARNING: at chance level (random guessing = ~180 min). This run did not learn.
+
+=== regression | total-minutes scalar | mse ===
+  epoch   1 | train loss 0.4872 | val loss 0.0876 | val err mean  181.5 median  182.7 min | 15.6s
+  epoch   2 | train loss 0.1110 | val loss 0.0843 | val err mean  181.5 median  185.5 min | 15.6s
+  epoch   3 | train loss 0.1062 | val loss 0.0820 | val err mean  172.0 median  168.5 min | 15.6s
+  epoch   4 | train loss 0.0934 | val loss 0.0767 | val err mean  161.5 median  151.1 min | 15.6s
+  epoch   5 | train loss 0.0871 | val loss 0.0730 | val err mean  157.9 median  146.0 min | 15.6s
+  epoch   6 | train loss 0.0865 | val loss 0.0733 | val err mean  156.6 median  143.8 min | 15.6s
+  epoch   7 | train loss 0.0819 | val loss 0.0708 | val err mean  154.1 median  142.1 min | 15.6s
+  epoch   8 | train loss 0.0794 | val loss 0.0678 | val err mean  149.6 median  132.8 min | 15.6s
+  epoch   9 | train loss 0.0749 | val loss 0.0632 | val err mean  143.7 median  126.8 min | 15.6s
+  epoch  10 | train loss 0.0711 | val loss 0.0616 | val err mean  140.1 median  117.0 min | 15.6s
+  epoch  11 | train loss 0.0685 | val loss 0.0568 | val err mean  136.3 median  114.2 min | 15.6s
+  epoch  12 | train loss 0.0635 | val loss 0.0676 | val err mean  139.8 median  125.1 min | 15.6s
+  epoch  13 | train loss 0.0602 | val loss 0.0534 | val err mean  130.6 median  113.0 min | 15.6s
+  epoch  14 | train loss 0.0569 | val loss 0.0514 | val err mean  125.4 median  103.9 min | 15.6s
+  epoch  15 | train loss 0.0527 | val loss 0.0447 | val err mean  117.3 median   94.5 min | 15.6s
+  epoch  16 | train loss 0.0496 | val loss 0.0420 | val err mean  115.1 median   92.7 min | 15.6s
+  epoch  17 | train loss 0.0463 | val loss 0.0457 | val err mean  116.7 median   98.8 min | 15.6s
+  epoch  18 | train loss 0.0453 | val loss 0.0396 | val err mean  109.0 median   84.2 min | 15.6s
+  epoch  19 | train loss 0.0457 | val loss 0.0435 | val err mean  116.2 median   91.8 min | 15.6s
+  epoch  20 | train loss 0.0393 | val loss 0.0364 | val err mean  106.9 median   84.0 min | 15.6s
+  epoch  21 | train loss 0.0387 | val loss 0.0351 | val err mean  105.3 median   85.9 min | 15.6s
+  epoch  22 | train loss 0.0370 | val loss 0.0331 | val err mean  102.4 median   84.1 min | 15.6s
+  epoch  23 | train loss 0.0351 | val loss 0.0394 | val err mean  109.2 median   87.4 min | 15.5s
+  epoch  24 | train loss 0.0322 | val loss 0.0310 | val err mean   96.3 median   76.4 min | 15.6s
+  epoch  25 | train loss 0.0311 | val loss 0.0281 | val err mean   91.8 median   73.5 min | 15.6s
+  epoch  26 | train loss 0.0306 | val loss 0.0335 | val err mean  100.0 median   81.2 min | 15.6s
+  epoch  27 | train loss 0.0287 | val loss 0.0306 | val err mean   96.9 median   78.5 min | 15.6s
+  epoch  28 | train loss 0.0297 | val loss 0.0271 | val err mean   91.1 median   73.8 min | 15.6s
+  epoch  29 | train loss 0.0277 | val loss 0.0254 | val err mean   88.4 median   69.3 min | 15.6s
+  epoch  30 | train loss 0.0266 | val loss 0.0325 | val err mean  101.0 median   84.1 min | 15.6s
+  epoch  31 | train loss 0.0276 | val loss 0.0250 | val err mean   86.3 median   68.4 min | 15.6s
+  epoch  32 | train loss 0.0252 | val loss 0.0244 | val err mean   86.5 median   67.7 min | 15.6s
+  epoch  33 | train loss 0.0244 | val loss 0.0251 | val err mean   87.2 median   68.4 min | 15.6s
+  epoch  34 | train loss 0.0241 | val loss 0.0271 | val err mean   92.9 median   79.0 min | 15.6s
+  epoch  35 | train loss 0.0234 | val loss 0.0236 | val err mean   83.8 median   65.2 min | 15.6s
+  epoch  36 | train loss 0.0229 | val loss 0.0231 | val err mean   83.8 median   67.3 min | 15.6s
+  epoch  37 | train loss 0.0229 | val loss 0.0232 | val err mean   84.3 median   68.0 min | 15.6s
+  epoch  38 | train loss 0.0221 | val loss 0.0227 | val err mean   83.0 median   66.6 min | 15.6s
+  epoch  39 | train loss 0.0223 | val loss 0.0228 | val err mean   83.0 median   65.7 min | 15.6s
+  epoch  40 | train loss 0.0220 | val loss 0.0229 | val err mean   83.2 median   65.1 min | 15.6s
+[logged] regression | total-minutes scalar | val mean err 83.01 min
+
+=== regression | total-minutes scalar | l1 ===
+  epoch   1 | train loss 0.3867 | val loss 0.2561 | val err mean  182.5 median  185.2 min | 15.6s
+  epoch   2 | train loss 0.2551 | val loss 0.2399 | val err mean  170.5 median  164.0 min | 15.6s
+  epoch   3 | train loss 0.2428 | val loss 0.2314 | val err mean  158.5 median  144.7 min | 15.6s
+  epoch   4 | train loss 0.2265 | val loss 0.2225 | val err mean  156.3 median  145.7 min | 15.6s
+  epoch   5 | train loss 0.2201 | val loss 0.2173 | val err mean  146.9 median  128.9 min | 15.6s
+  epoch   6 | train loss 0.2132 | val loss 0.2043 | val err mean  140.7 median  120.3 min | 15.6s
+  epoch   7 | train loss 0.2059 | val loss 0.2343 | val err mean  148.1 median  135.3 min | 15.6s
+  epoch   8 | train loss 0.2015 | val loss 0.2001 | val err mean  139.3 median  124.9 min | 15.6s
+  epoch   9 | train loss 0.1949 | val loss 0.2246 | val err mean  144.8 median  134.1 min | 15.6s
+  epoch  10 | train loss 0.1873 | val loss 0.1777 | val err mean  124.3 median  100.2 min | 15.6s
+  epoch  11 | train loss 0.1811 | val loss 0.2078 | val err mean  142.7 median  123.8 min | 15.6s
+  epoch  12 | train loss 0.1750 | val loss 0.2032 | val err mean  139.1 median  124.1 min | 15.6s
+  epoch  13 | train loss 0.1730 | val loss 0.1616 | val err mean  113.5 median   89.2 min | 15.6s
+  epoch  14 | train loss 0.1599 | val loss 0.1850 | val err mean  123.8 median  107.0 min | 15.6s
+  epoch  15 | train loss 0.1575 | val loss 0.1410 | val err mean   99.9 median   70.4 min | 15.6s
+  epoch  16 | train loss 0.1504 | val loss 0.1356 | val err mean   96.4 median   67.8 min | 15.6s
+  epoch  17 | train loss 0.1449 | val loss 0.1338 | val err mean   94.8 median   67.7 min | 15.6s
+  epoch  18 | train loss 0.1410 | val loss 0.1257 | val err mean   89.5 median   63.2 min | 15.6s
+  epoch  19 | train loss 0.1331 | val loss 0.1415 | val err mean  100.1 median   76.9 min | 15.6s
+  epoch  20 | train loss 0.1364 | val loss 0.1255 | val err mean   89.4 median   64.0 min | 15.6s
+  epoch  21 | train loss 0.1314 | val loss 0.1251 | val err mean   88.8 median   67.0 min | 15.6s
+  epoch  22 | train loss 0.1260 | val loss 0.1160 | val err mean   82.5 median   59.7 min | 15.6s
+  epoch  23 | train loss 0.1229 | val loss 0.1152 | val err mean   81.8 median   59.1 min | 15.6s
+  epoch  24 | train loss 0.1181 | val loss 0.1158 | val err mean   82.2 median   58.8 min | 15.6s
+  epoch  25 | train loss 0.1166 | val loss 0.1051 | val err mean   75.2 median   53.3 min | 15.5s
+  epoch  26 | train loss 0.1133 | val loss 0.1496 | val err mean  105.7 median   87.2 min | 15.5s
+  epoch  27 | train loss 0.1104 | val loss 0.1064 | val err mean   76.0 median   54.6 min | 15.6s
+  epoch  28 | train loss 0.1098 | val loss 0.1056 | val err mean   75.4 median   57.0 min | 15.6s
+  epoch  29 | train loss 0.1069 | val loss 0.1061 | val err mean   75.9 median   55.9 min | 15.6s
+  epoch  30 | train loss 0.1044 | val loss 0.1032 | val err mean   73.5 median   51.1 min | 15.6s
+  epoch  31 | train loss 0.1018 | val loss 0.0956 | val err mean   68.3 median   48.8 min | 15.6s
+  epoch  32 | train loss 0.1002 | val loss 0.0981 | val err mean   70.2 median   51.3 min | 15.6s
+  epoch  33 | train loss 0.0985 | val loss 0.0937 | val err mean   67.1 median   47.6 min | 15.6s
+  epoch  34 | train loss 0.0964 | val loss 0.0932 | val err mean   66.7 median   46.5 min | 15.6s
+  epoch  35 | train loss 0.0955 | val loss 0.0925 | val err mean   66.1 median   47.0 min | 15.6s
+  epoch  36 | train loss 0.0948 | val loss 0.0984 | val err mean   70.4 median   52.6 min | 15.6s
+  epoch  37 | train loss 0.0939 | val loss 0.0914 | val err mean   65.3 median   46.2 min | 15.6s
+  epoch  38 | train loss 0.0937 | val loss 0.0903 | val err mean   64.6 median   45.0 min | 15.6s
+  epoch  39 | train loss 0.0932 | val loss 0.0902 | val err mean   64.6 median   44.8 min | 15.6s
+  epoch  40 | train loss 0.0932 | val loss 0.0904 | val err mean   64.7 median   45.1 min | 15.6s
+[logged] regression | total-minutes scalar | val mean err 64.55 min
+
+=== regression | total-minutes scalar | smoothl1 ===
+  epoch   1 | train loss 0.1277 | val loss 0.0430 | val err mean  182.1 median  185.1 min | 15.6s
+  epoch   2 | train loss 0.0462 | val loss 0.0426 | val err mean  179.6 median  181.9 min | 15.6s
+  epoch   3 | train loss 0.0446 | val loss 0.0412 | val err mean  174.9 median  171.0 min | 15.6s
+  epoch   4 | train loss 0.0415 | val loss 0.0401 | val err mean  168.5 median  164.7 min | 15.6s
+  epoch   5 | train loss 0.0394 | val loss 0.0362 | val err mean  155.8 median  142.8 min | 15.6s
+  epoch   6 | train loss 0.0380 | val loss 0.0370 | val err mean  158.2 median  149.7 min | 15.6s
+  epoch   7 | train loss 0.0361 | val loss 0.0368 | val err mean  159.4 median  154.3 min | 15.6s
+  epoch   8 | train loss 0.0351 | val loss 0.0330 | val err mean  148.3 median  135.4 min | 15.6s
+  epoch   9 | train loss 0.0332 | val loss 0.0317 | val err mean  141.7 median  122.1 min | 15.6s
+  epoch  10 | train loss 0.0330 | val loss 0.0325 | val err mean  144.3 median  132.5 min | 15.6s
+  epoch  11 | train loss 0.0295 | val loss 0.0267 | val err mean  132.3 median  110.1 min | 15.6s
+  epoch  12 | train loss 0.0290 | val loss 0.0271 | val err mean  129.0 median  108.7 min | 15.6s
+  epoch  13 | train loss 0.0274 | val loss 0.0249 | val err mean  126.2 median  105.8 min | 15.6s
+  epoch  14 | train loss 0.0256 | val loss 0.0216 | val err mean  116.5 median   94.5 min | 15.6s
+  epoch  15 | train loss 0.0236 | val loss 0.0217 | val err mean  114.9 median   92.4 min | 15.6s
+  epoch  16 | train loss 0.0228 | val loss 0.0247 | val err mean  119.1 median  101.8 min | 15.5s
+  epoch  17 | train loss 0.0210 | val loss 0.0191 | val err mean  108.4 median   86.2 min | 15.6s
+  epoch  18 | train loss 0.0197 | val loss 0.0167 | val err mean   99.1 median   74.5 min | 15.6s
+  epoch  19 | train loss 0.0178 | val loss 0.0170 | val err mean  101.2 median   78.0 min | 15.5s
+  epoch  20 | train loss 0.0169 | val loss 0.0228 | val err mean  118.0 median   95.5 min | 15.6s
+  epoch  21 | train loss 0.0163 | val loss 0.0159 | val err mean   96.1 median   73.5 min | 15.6s
+  epoch  22 | train loss 0.0150 | val loss 0.0135 | val err mean   89.3 median   68.7 min | 15.6s
+  epoch  23 | train loss 0.0144 | val loss 0.0187 | val err mean  107.7 median   85.5 min | 15.6s
+  epoch  24 | train loss 0.0132 | val loss 0.0130 | val err mean   88.5 median   69.0 min | 15.6s
+  epoch  25 | train loss 0.0124 | val loss 0.0128 | val err mean   88.4 median   69.8 min | 15.6s
+  epoch  26 | train loss 0.0120 | val loss 0.0124 | val err mean   87.6 median   69.3 min | 15.6s
+  epoch  27 | train loss 0.0114 | val loss 0.0207 | val err mean  113.0 median  100.6 min | 15.6s
+  epoch  28 | train loss 0.0112 | val loss 0.0116 | val err mean   82.8 median   62.4 min | 15.6s
+  epoch  29 | train loss 0.0102 | val loss 0.0116 | val err mean   82.2 median   61.9 min | 15.6s
+  epoch  30 | train loss 0.0094 | val loss 0.0105 | val err mean   79.3 median   61.3 min | 15.6s
+  epoch  31 | train loss 0.0090 | val loss 0.0101 | val err mean   77.6 median   60.6 min | 15.6s
+  epoch  32 | train loss 0.0087 | val loss 0.0099 | val err mean   76.2 median   58.1 min | 15.6s
+  epoch  33 | train loss 0.0080 | val loss 0.0097 | val err mean   75.6 median   58.4 min | 15.6s
+  epoch  34 | train loss 0.0078 | val loss 0.0097 | val err mean   74.5 median   55.9 min | 15.6s
+  epoch  35 | train loss 0.0079 | val loss 0.0096 | val err mean   76.0 median   60.7 min | 15.6s
+  epoch  36 | train loss 0.0075 | val loss 0.0095 | val err mean   75.6 median   59.7 min | 15.6s
+  epoch  37 | train loss 0.0075 | val loss 0.0096 | val err mean   76.1 median   60.8 min | 15.6s
+  epoch  38 | train loss 0.0073 | val loss 0.0093 | val err mean   74.8 median   58.2 min | 15.6s
+  epoch  39 | train loss 0.0073 | val loss 0.0091 | val err mean   73.0 median   57.2 min | 15.6s
+  epoch  40 | train loss 0.0072 | val loss 0.0090 | val err mean   72.7 median   57.5 min | 15.6s
+[logged] regression | total-minutes scalar | val mean err 72.74 min
+
+=== multi-head | hour cls + minute cls | CE + 0.5*minute ===
+  epoch   1 | train loss 4.5503 | val loss 4.5316 | val err mean  181.2 median  182.0 min | 15.5s
+  epoch   2 | train loss 4.5330 | val loss 4.5320 | val err mean  182.5 median  184.5 min | 15.2s
+  epoch   3 | train loss 4.5326 | val loss 4.5325 | val err mean  182.8 median  185.5 min | 15.2s
+  epoch   4 | train loss 4.5324 | val loss 4.5328 | val err mean  182.8 median  185.5 min | 15.2s
+  epoch   5 | train loss 4.5323 | val loss 4.5331 | val err mean  184.8 median  187.0 min | 15.2s
+  epoch   6 | train loss 4.5322 | val loss 4.5334 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch   7 | train loss 4.5321 | val loss 4.5336 | val err mean  184.8 median  187.0 min | 15.2s
+  epoch   8 | train loss 4.5321 | val loss 4.5337 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch   9 | train loss 4.5321 | val loss 4.5339 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch  10 | train loss 4.5321 | val loss 4.5340 | val err mean  184.8 median  185.5 min | 15.3s
+  epoch  11 | train loss 4.5321 | val loss 4.5341 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch  12 | train loss 4.5320 | val loss 4.5341 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch  13 | train loss 4.5321 | val loss 4.5342 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  14 | train loss 4.5320 | val loss 4.5343 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  15 | train loss 4.5320 | val loss 4.5343 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  16 | train loss 4.5320 | val loss 4.5343 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  17 | train loss 4.5321 | val loss 4.5343 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  18 | train loss 4.5320 | val loss 4.5343 | val err mean  184.5 median  187.0 min | 15.3s
+  epoch  19 | train loss 4.5320 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  20 | train loss 4.5320 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  21 | train loss 4.5320 | val loss 4.5345 | val err mean  184.5 median  187.0 min | 15.3s
+  epoch  22 | train loss 4.5319 | val loss 4.5344 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  23 | train loss 4.5320 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  24 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  25 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  26 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  27 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  28 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  29 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  30 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  31 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  32 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  33 | train loss 4.5319 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  34 | train loss 4.5318 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  35 | train loss 4.5318 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  36 | train loss 4.5318 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  37 | train loss 4.5318 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  38 | train loss 4.5318 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  39 | train loss 4.5318 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  40 | train loss 4.5318 | val loss 4.5345 | val err mean  184.8 median  186.0 min | 15.3s
+[logged] multi-head | hour cls + minute cls | val mean err 181.21 min
+  WARNING: at chance level (random guessing = ~180 min). This run did not learn.
+
+=== multi-head | hour cls + minute cls | CE + 1.0*minute ===
+  epoch   1 | train loss 6.6040 | val loss 6.5790 | val err mean  182.5 median  184.5 min | 15.4s
+  epoch   2 | train loss 6.5806 | val loss 6.5795 | val err mean  182.2 median  184.0 min | 15.3s
+  epoch   3 | train loss 6.5801 | val loss 6.5801 | val err mean  182.8 median  185.5 min | 15.3s
+  epoch   4 | train loss 6.5798 | val loss 6.5807 | val err mean  182.3 median  183.5 min | 15.2s
+  epoch   5 | train loss 6.5796 | val loss 6.5812 | val err mean  182.8 median  185.5 min | 15.3s
+  epoch   6 | train loss 6.5794 | val loss 6.5815 | val err mean  184.8 median  187.0 min | 15.2s
+  epoch   7 | train loss 6.5794 | val loss 6.5819 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch   8 | train loss 6.5793 | val loss 6.5821 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch   9 | train loss 6.5793 | val loss 6.5823 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch  10 | train loss 6.5792 | val loss 6.5825 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  11 | train loss 6.5792 | val loss 6.5826 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  12 | train loss 6.5792 | val loss 6.5828 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  13 | train loss 6.5792 | val loss 6.5829 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  14 | train loss 6.5791 | val loss 6.5829 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  15 | train loss 6.5791 | val loss 6.5830 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  16 | train loss 6.5791 | val loss 6.5831 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  17 | train loss 6.5791 | val loss 6.5831 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  18 | train loss 6.5791 | val loss 6.5831 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  19 | train loss 6.5790 | val loss 6.5832 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  20 | train loss 6.5790 | val loss 6.5833 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  21 | train loss 6.5790 | val loss 6.5832 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  22 | train loss 6.5790 | val loss 6.5833 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  23 | train loss 6.5790 | val loss 6.5833 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  24 | train loss 6.5790 | val loss 6.5833 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  25 | train loss 6.5789 | val loss 6.5833 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  26 | train loss 6.5790 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  27 | train loss 6.5789 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  28 | train loss 6.5789 | val loss 6.5833 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  29 | train loss 6.5789 | val loss 6.5833 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  30 | train loss 6.5789 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  31 | train loss 6.5789 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.2s
+  epoch  32 | train loss 6.5789 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  33 | train loss 6.5789 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  34 | train loss 6.5788 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  35 | train loss 6.5788 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  36 | train loss 6.5788 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  37 | train loss 6.5788 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.2s
+  epoch  38 | train loss 6.5788 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.2s
+  epoch  39 | train loss 6.5788 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  40 | train loss 6.5788 | val loss 6.5834 | val err mean  184.8 median  186.0 min | 15.3s
+[logged] multi-head | hour cls + minute cls | val mean err 182.19 min
+  WARNING: at chance level (random guessing = ~180 min). This run did not learn.
+
+=== multi-head | hour cls + minute cls | CE + 2.0*minute ===
+  epoch   1 | train loss 10.7027 | val loss 10.6731 | val err mean  181.2 median  182.0 min | 15.4s
+  epoch   2 | train loss 10.6763 | val loss 10.6741 | val err mean  182.8 median  185.5 min | 15.3s
+  epoch   3 | train loss 10.6749 | val loss 10.6752 | val err mean  182.8 median  185.5 min | 15.2s
+  epoch   4 | train loss 10.6744 | val loss 10.6760 | val err mean  182.8 median  185.5 min | 15.2s
+  epoch   5 | train loss 10.6741 | val loss 10.6768 | val err mean  182.8 median  185.5 min | 15.2s
+  epoch   6 | train loss 10.6739 | val loss 10.6776 | val err mean  184.7 median  186.0 min | 15.3s
+  epoch   7 | train loss 10.6738 | val loss 10.6782 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch   8 | train loss 10.6737 | val loss 10.6786 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch   9 | train loss 10.6736 | val loss 10.6790 | val err mean  184.8 median  187.0 min | 15.3s
+  epoch  10 | train loss 10.6735 | val loss 10.6793 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  11 | train loss 10.6735 | val loss 10.6797 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  12 | train loss 10.6734 | val loss 10.6798 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  13 | train loss 10.6734 | val loss 10.6800 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  14 | train loss 10.6734 | val loss 10.6800 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  15 | train loss 10.6733 | val loss 10.6803 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  16 | train loss 10.6733 | val loss 10.6804 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  17 | train loss 10.6733 | val loss 10.6805 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  18 | train loss 10.6732 | val loss 10.6806 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  19 | train loss 10.6732 | val loss 10.6806 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  20 | train loss 10.6732 | val loss 10.6808 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  21 | train loss 10.6731 | val loss 10.6809 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  22 | train loss 10.6731 | val loss 10.6808 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  23 | train loss 10.6731 | val loss 10.6809 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  24 | train loss 10.6731 | val loss 10.6808 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  25 | train loss 10.6730 | val loss 10.6809 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  26 | train loss 10.6730 | val loss 10.6809 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  27 | train loss 10.6730 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  28 | train loss 10.6730 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  29 | train loss 10.6729 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  30 | train loss 10.6729 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  31 | train loss 10.6729 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  32 | train loss 10.6729 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  33 | train loss 10.6729 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  34 | train loss 10.6728 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  35 | train loss 10.6728 | val loss 10.6810 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  36 | train loss 10.6728 | val loss 10.6811 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  37 | train loss 10.6728 | val loss 10.6811 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  38 | train loss 10.6728 | val loss 10.6811 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  39 | train loss 10.6728 | val loss 10.6811 | val err mean  184.8 median  186.0 min | 15.3s
+  epoch  40 | train loss 10.6728 | val loss 10.6811 | val err mean  184.8 median  186.0 min | 15.3s
+[logged] multi-head | hour cls + minute cls | val mean err 181.24 min
+  WARNING: at chance level (random guessing = ~180 min). This run did not learn.
+
+=== multi-head | hour cls + minute reg | CE + 0.5*minute ===
+  epoch   1 | train loss 2.5453 | val loss 2.5083 | val err mean  179.7 median  179.5 min | 15.6s
+  epoch   2 | train loss 2.5125 | val loss 2.5050 | val err mean  176.8 median  177.4 min | 15.6s
+  epoch   3 | train loss 2.4954 | val loss 2.4978 | val err mean  178.1 median  177.7 min | 15.6s
+  epoch   4 | train loss 2.4064 | val loss 2.3697 | val err mean  139.5 median  122.1 min | 15.6s
+  epoch   5 | train loss 2.3443 | val loss 2.3143 | val err mean  138.3 median  121.3 min | 15.6s
+  epoch   6 | train loss 2.2865 | val loss 2.2293 | val err mean  124.2 median  105.4 min | 15.6s
+  epoch   7 | train loss 2.2165 | val loss 2.1717 | val err mean  116.1 median   97.7 min | 15.6s
+  epoch   8 | train loss 2.1790 | val loss 2.1351 | val err mean  119.0 median   92.7 min | 15.6s
+  epoch   9 | train loss 2.1350 | val loss 2.0824 | val err mean  114.1 median   84.5 min | 15.6s
+  epoch  10 | train loss 2.0977 | val loss 2.0317 | val err mean  104.1 median   72.2 min | 15.6s
+  epoch  11 | train loss 2.0498 | val loss 1.9887 | val err mean   99.6 median   70.3 min | 15.6s
+  epoch  12 | train loss 2.0061 | val loss 1.9860 | val err mean   95.1 median   68.8 min | 15.6s
+  epoch  13 | train loss 1.9595 | val loss 1.8930 | val err mean   97.1 median   66.6 min | 15.6s
+  epoch  14 | train loss 1.9223 | val loss 1.9737 | val err mean   88.4 median   68.9 min | 15.6s
+  epoch  15 | train loss 1.8888 | val loss 1.8137 | val err mean   81.1 median   58.1 min | 15.6s
+  epoch  16 | train loss 1.8550 | val loss 1.7578 | val err mean   82.6 median   54.8 min | 15.6s
+  epoch  17 | train loss 1.8043 | val loss 1.7208 | val err mean   78.7 median   53.8 min | 15.6s
+  epoch  18 | train loss 1.7798 | val loss 1.6990 | val err mean   76.3 median   50.0 min | 15.6s
+  epoch  19 | train loss 1.7452 | val loss 1.7964 | val err mean   85.5 median   60.0 min | 15.6s
+  epoch  20 | train loss 1.7412 | val loss 1.4993 | val err mean   63.3 median   39.3 min | 15.6s
+  epoch  21 | train loss 1.6936 | val loss 1.5326 | val err mean   64.0 median   38.6 min | 15.6s
+  epoch  22 | train loss 1.6706 | val loss 1.4690 | val err mean   58.6 median   37.6 min | 15.6s
+  epoch  23 | train loss 1.6570 | val loss 1.4872 | val err mean   60.0 median   39.5 min | 15.6s
+  epoch  24 | train loss 1.6295 | val loss 1.4853 | val err mean   62.7 median   38.8 min | 15.6s
+  epoch  25 | train loss 1.6048 | val loss 1.5016 | val err mean   55.1 median   38.5 min | 15.6s
+  epoch  26 | train loss 1.5790 | val loss 1.4079 | val err mean   53.0 median   34.1 min | 15.6s
+  epoch  27 | train loss 1.5567 | val loss 1.3787 | val err mean   48.5 median   30.6 min | 15.6s
+  epoch  28 | train loss 1.5401 | val loss 1.3567 | val err mean   53.8 median   32.8 min | 15.6s
+  epoch  29 | train loss 1.5280 | val loss 1.3283 | val err mean   47.7 median   29.5 min | 15.6s
+  epoch  30 | train loss 1.5120 | val loss 1.4228 | val err mean   50.4 median   36.1 min | 15.6s
+  epoch  31 | train loss 1.5114 | val loss 1.3003 | val err mean   48.6 median   29.5 min | 15.6s
+  epoch  32 | train loss 1.4920 | val loss 1.2738 | val err mean   46.3 median   27.4 min | 15.6s
+  epoch  33 | train loss 1.4743 | val loss 1.2620 | val err mean   44.9 median   27.2 min | 15.6s
+  epoch  34 | train loss 1.4672 | val loss 1.2591 | val err mean   48.3 median   27.6 min | 15.6s
+  epoch  35 | train loss 1.4681 | val loss 1.2377 | val err mean   43.7 median   26.6 min | 15.6s
+  epoch  36 | train loss 1.4553 | val loss 1.2359 | val err mean   43.9 median   26.6 min | 15.6s
+  epoch  37 | train loss 1.4430 | val loss 1.2296 | val err mean   44.1 median   26.7 min | 15.6s
+  epoch  38 | train loss 1.4489 | val loss 1.2276 | val err mean   43.6 median   26.7 min | 15.6s
+  epoch  39 | train loss 1.4463 | val loss 1.2272 | val err mean   44.4 median   26.5 min | 15.6s
+  epoch  40 | train loss 1.4433 | val loss 1.2267 | val err mean   44.0 median   26.6 min | 15.6s
+[logged] multi-head | hour cls + minute reg | val mean err 43.55 min
+
+=== multi-head | hour cls + minute reg | CE + 1.0*minute ===
+  epoch   1 | train loss 2.6046 | val loss 2.5306 | val err mean  184.8 median  186.3 min | 15.6s
+  epoch   2 | train loss 2.5368 | val loss 2.5271 | val err mean  180.8 median  181.3 min | 15.6s
+  epoch   3 | train loss 2.5325 | val loss 2.5226 | val err mean  183.3 median  184.1 min | 15.6s
+  epoch   4 | train loss 2.5105 | val loss 2.4730 | val err mean  155.3 median  140.3 min | 15.6s
+  epoch   5 | train loss 2.4563 | val loss 2.4318 | val err mean  139.4 median  123.5 min | 15.6s
+  epoch   6 | train loss 2.3726 | val loss 2.3527 | val err mean  127.8 median  110.4 min | 15.6s
+  epoch   7 | train loss 2.3085 | val loss 2.2489 | val err mean  119.3 median   96.7 min | 15.6s
+  epoch   8 | train loss 2.2465 | val loss 2.2033 | val err mean  118.1 median  100.6 min | 15.5s
+  epoch   9 | train loss 2.2147 | val loss 2.1085 | val err mean  105.3 median   80.8 min | 15.6s
+  epoch  10 | train loss 2.1347 | val loss 2.0506 | val err mean   99.8 median   74.4 min | 15.6s
+  epoch  11 | train loss 2.0825 | val loss 1.9994 | val err mean   91.4 median   68.1 min | 15.6s
+  epoch  12 | train loss 2.0089 | val loss 1.8766 | val err mean   82.4 median   61.3 min | 15.6s
+  epoch  13 | train loss 1.9541 | val loss 2.4505 | val err mean  114.8 median   87.0 min | 15.6s
+  epoch  14 | train loss 1.9194 | val loss 1.8807 | val err mean   80.6 median   59.6 min | 15.6s
+  epoch  15 | train loss 1.8402 | val loss 1.9082 | val err mean   82.7 median   58.3 min | 15.6s
+  epoch  16 | train loss 1.8197 | val loss 1.6938 | val err mean   67.2 median   48.1 min | 15.6s
+  epoch  17 | train loss 1.7564 | val loss 1.7439 | val err mean   66.2 median   53.8 min | 15.6s
+  epoch  18 | train loss 1.7137 | val loss 1.6385 | val err mean   57.1 median   44.1 min | 15.6s
+  epoch  19 | train loss 1.6712 | val loss 1.4645 | val err mean   51.3 median   35.8 min | 15.6s
+  epoch  20 | train loss 1.6558 | val loss 1.4606 | val err mean   51.3 median   39.1 min | 15.6s
+  epoch  21 | train loss 1.6189 | val loss 1.4487 | val err mean   48.5 median   31.4 min | 15.6s
+  epoch  22 | train loss 1.5791 | val loss 1.3833 | val err mean   41.9 median   29.9 min | 15.6s
+  epoch  23 | train loss 1.5499 | val loss 1.3663 | val err mean   41.6 median   29.3 min | 15.6s
+  epoch  24 | train loss 1.5425 | val loss 1.3036 | val err mean   41.3 median   29.0 min | 15.6s
+  epoch  25 | train loss 1.5288 | val loss 1.4770 | val err mean   52.6 median   39.2 min | 15.6s
+  epoch  26 | train loss 1.4902 | val loss 1.2317 | val err mean   35.1 median   24.5 min | 15.6s
+  epoch  27 | train loss 1.4740 | val loss 1.2353 | val err mean   37.2 median   25.7 min | 15.6s
+  epoch  28 | train loss 1.4519 | val loss 1.2233 | val err mean   35.4 median   24.2 min | 15.6s
+  epoch  29 | train loss 1.4313 | val loss 1.1613 | val err mean   33.3 median   22.6 min | 15.6s
+  epoch  30 | train loss 1.4124 | val loss 1.1446 | val err mean   33.9 median   22.8 min | 15.6s
+  epoch  31 | train loss 1.3908 | val loss 1.1779 | val err mean   34.7 median   23.3 min | 15.6s
+  epoch  32 | train loss 1.3873 | val loss 1.1494 | val err mean   33.7 median   22.6 min | 15.6s
+  epoch  33 | train loss 1.3732 | val loss 1.1257 | val err mean   33.1 median   22.6 min | 15.6s
+  epoch  34 | train loss 1.3584 | val loss 1.1038 | val err mean   32.5 median   21.5 min | 15.6s
+  epoch  35 | train loss 1.3617 | val loss 1.1021 | val err mean   32.6 median   21.5 min | 15.6s
+  epoch  36 | train loss 1.3536 | val loss 1.1040 | val err mean   31.5 median   21.0 min | 15.6s
+  epoch  37 | train loss 1.3431 | val loss 1.0941 | val err mean   31.7 median   21.3 min | 15.6s
+  epoch  38 | train loss 1.3319 | val loss 1.0899 | val err mean   32.1 median   21.2 min | 15.6s
+  epoch  39 | train loss 1.3450 | val loss 1.0886 | val err mean   31.8 median   21.1 min | 15.6s
+  epoch  40 | train loss 1.3416 | val loss 1.0893 | val err mean   31.9 median   21.3 min | 15.6s
+[logged] multi-head | hour cls + minute reg | val mean err 31.54 min
+
+=== multi-head | hour cls + minute reg | CE + 2.0*minute ===
+  epoch   1 | train loss 2.7166 | val loss 2.5764 | val err mean  179.9 median  179.4 min | 15.6s
+  epoch   2 | train loss 2.5808 | val loss 2.5679 | val err mean  184.9 median  186.3 min | 15.6s
+  epoch   3 | train loss 2.5786 | val loss 2.5644 | val err mean  172.3 median  167.3 min | 15.6s
+  epoch   4 | train loss 2.5592 | val loss 2.5799 | val err mean  184.3 median  186.4 min | 15.6s
+  epoch   5 | train loss 2.4892 | val loss 2.4204 | val err mean  135.2 median  117.7 min | 15.6s
+  epoch   6 | train loss 2.4005 | val loss 2.3734 | val err mean  130.7 median  113.4 min | 15.6s
+  epoch   7 | train loss 2.3493 | val loss 2.3912 | val err mean  130.8 median  115.7 min | 15.6s
+  epoch   8 | train loss 2.2372 | val loss 2.1517 | val err mean  103.8 median   76.3 min | 15.6s
+  epoch   9 | train loss 2.1500 | val loss 2.2227 | val err mean  106.8 median   74.8 min | 15.6s
+  epoch  10 | train loss 2.0681 | val loss 1.9605 | val err mean   86.2 median   60.4 min | 15.6s
+  epoch  11 | train loss 1.9763 | val loss 1.8544 | val err mean   70.6 median   54.7 min | 15.6s
+  epoch  12 | train loss 1.8828 | val loss 1.7360 | val err mean   65.7 median   51.4 min | 15.6s
+  epoch  13 | train loss 1.8009 | val loss 1.6780 | val err mean   64.5 median   50.3 min | 15.6s
+  epoch  14 | train loss 1.6936 | val loss 1.5710 | val err mean   53.9 median   42.7 min | 15.6s
+  epoch  15 | train loss 1.6417 | val loss 1.6437 | val err mean   56.5 median   49.1 min | 15.6s
+  epoch  16 | train loss 1.5671 | val loss 1.3975 | val err mean   46.4 median   32.1 min | 15.6s
+  epoch  17 | train loss 1.4785 | val loss 1.4527 | val err mean   51.4 median   37.8 min | 15.6s
+  epoch  18 | train loss 1.4356 | val loss 1.3810 | val err mean   46.0 median   36.2 min | 15.6s
+  epoch  19 | train loss 1.3803 | val loss 1.2628 | val err mean   39.5 median   26.9 min | 15.6s
+  epoch  20 | train loss 1.3217 | val loss 1.3343 | val err mean   43.8 median   34.0 min | 15.5s
+  epoch  21 | train loss 1.2641 | val loss 1.1180 | val err mean   33.6 median   21.6 min | 15.6s
+  epoch  22 | train loss 1.2180 | val loss 1.0603 | val err mean   32.6 median   20.3 min | 15.6s
+  epoch  23 | train loss 1.1715 | val loss 1.0778 | val err mean   35.2 median   22.6 min | 15.6s
+  epoch  24 | train loss 1.1411 | val loss 1.2893 | val err mean   41.5 median   28.1 min | 15.6s
+  epoch  25 | train loss 1.1053 | val loss 1.0812 | val err mean   33.2 median   22.2 min | 15.6s
+  epoch  26 | train loss 1.0748 | val loss 0.9498 | val err mean   29.7 median   18.9 min | 15.6s
+  epoch  27 | train loss 1.0455 | val loss 0.9061 | val err mean   28.2 median   18.8 min | 15.6s
+  epoch  28 | train loss 1.0100 | val loss 0.9056 | val err mean   27.9 median   18.6 min | 15.6s
+  epoch  29 | train loss 0.9823 | val loss 0.8935 | val err mean   28.1 median   18.7 min | 15.6s
+  epoch  30 | train loss 0.9625 | val loss 0.8991 | val err mean   28.1 median   18.2 min | 15.5s
+  epoch  31 | train loss 0.9500 | val loss 0.9543 | val err mean   29.7 median   19.4 min | 15.6s
+  epoch  32 | train loss 0.9277 | val loss 0.8184 | val err mean   25.6 median   17.4 min | 15.6s
+  epoch  33 | train loss 0.9195 | val loss 0.8126 | val err mean   25.8 median   17.5 min | 15.6s
+  epoch  34 | train loss 0.8937 | val loss 0.8214 | val err mean   25.3 median   17.6 min | 15.5s
+  epoch  35 | train loss 0.8924 | val loss 0.8178 | val err mean   25.1 median   17.2 min | 15.6s
+  epoch  36 | train loss 0.8833 | val loss 0.7938 | val err mean   25.3 median   17.4 min | 15.6s
+  epoch  37 | train loss 0.8766 | val loss 0.7912 | val err mean   25.1 median   17.4 min | 15.6s
+  epoch  38 | train loss 0.8781 | val loss 0.7865 | val err mean   25.0 median   17.3 min | 15.5s
+  epoch  39 | train loss 0.8689 | val loss 0.7855 | val err mean   24.8 median   17.2 min | 15.6s
+  epoch  40 | train loss 0.8675 | val loss 0.7867 | val err mean   24.6 median   17.1 min | 15.6s
+[logged] multi-head | hour cls + minute reg | val mean err 24.62 min
+
+=== trig encoding | raw linear | MSE on (sin,cos)x2 ===
+  epoch   1 | train loss 0.5809 | val loss 0.4999 | val err mean  174.8 median  171.2 min | 15.6s
+  epoch   2 | train loss 0.5005 | val loss 0.4997 | val err mean  174.5 median  172.5 min | 15.6s
+  epoch   3 | train loss 0.5000 | val loss 0.4993 | val err mean  172.6 median  169.1 min | 15.6s
+  epoch   4 | train loss 0.4930 | val loss 0.4793 | val err mean  143.3 median  124.7 min | 15.5s
+  epoch   5 | train loss 0.4566 | val loss 0.4801 | val err mean  155.0 median  144.4 min | 15.6s
+  epoch   6 | train loss 0.4235 | val loss 0.4134 | val err mean  127.9 median  116.1 min | 15.6s
+  epoch   7 | train loss 0.4090 | val loss 0.4161 | val err mean  130.5 median  115.9 min | 15.6s
+  epoch   8 | train loss 0.3940 | val loss 0.3703 | val err mean  117.6 median  105.6 min | 15.6s
+  epoch   9 | train loss 0.3821 | val loss 0.3413 | val err mean  106.8 median   99.9 min | 15.5s
+  epoch  10 | train loss 0.3723 | val loss 0.3507 | val err mean  106.2 median  103.6 min | 15.6s
+  epoch  11 | train loss 0.3635 | val loss 0.3266 | val err mean  106.8 median  100.8 min | 15.6s
+  epoch  12 | train loss 0.3574 | val loss 0.3005 | val err mean  107.3 median  106.9 min | 15.6s
+  epoch  13 | train loss 0.3465 | val loss 0.3326 | val err mean  108.9 median   68.5 min | 15.6s
+  epoch  14 | train loss 0.3409 | val loss 0.2984 | val err mean  105.2 median  109.0 min | 15.6s
+  epoch  15 | train loss 0.3352 | val loss 0.2984 | val err mean  101.2 median  104.0 min | 15.6s
+  epoch  16 | train loss 0.3323 | val loss 0.2832 | val err mean  104.7 median  109.1 min | 15.6s
+  epoch  17 | train loss 0.3282 | val loss 0.2879 | val err mean  101.1 median  104.9 min | 15.6s
+  epoch  18 | train loss 0.3252 | val loss 0.3079 | val err mean  100.6 median   65.9 min | 15.6s
+  epoch  19 | train loss 0.3241 | val loss 0.2864 | val err mean  102.5 median  107.5 min | 15.6s
+  epoch  20 | train loss 0.3221 | val loss 0.2832 | val err mean  101.7 median   68.2 min | 15.6s
+  epoch  21 | train loss 0.3202 | val loss 0.2811 | val err mean  102.7 median  104.8 min | 15.6s
+  epoch  22 | train loss 0.3157 | val loss 0.2764 | val err mean  101.0 median   80.2 min | 15.6s
+  epoch  23 | train loss 0.3149 | val loss 0.2830 | val err mean  103.0 median  107.3 min | 15.6s
+  epoch  24 | train loss 0.3147 | val loss 0.2928 | val err mean  102.6 median  100.4 min | 15.6s
+  epoch  25 | train loss 0.3150 | val loss 0.2681 | val err mean  104.0 median  109.4 min | 15.6s
+  epoch  26 | train loss 0.3141 | val loss 0.2718 | val err mean  104.9 median  109.6 min | 15.6s
+  epoch  27 | train loss 0.3128 | val loss 0.2819 | val err mean  103.7 median  108.2 min | 15.6s
+  epoch  28 | train loss 0.3112 | val loss 0.2660 | val err mean  104.9 median  109.4 min | 15.6s
+  epoch  29 | train loss 0.3118 | val loss 0.2690 | val err mean  104.0 median  108.8 min | 15.6s
+  epoch  30 | train loss 0.3108 | val loss 0.2708 | val err mean  105.2 median  109.6 min | 15.6s
+  epoch  31 | train loss 0.3123 | val loss 0.2654 | val err mean  106.0 median  109.8 min | 15.6s
+  epoch  32 | train loss 0.3099 | val loss 0.2716 | val err mean  106.9 median  110.2 min | 15.6s
+  epoch  33 | train loss 0.3090 | val loss 0.2724 | val err mean  106.2 median  110.1 min | 15.6s
+  epoch  34 | train loss 0.3100 | val loss 0.2690 | val err mean  105.0 median  109.3 min | 15.6s
+  epoch  35 | train loss 0.3108 | val loss 0.2737 | val err mean  105.8 median  109.6 min | 15.6s
+  epoch  36 | train loss 0.3100 | val loss 0.2707 | val err mean  107.1 median  110.4 min | 15.6s
+  epoch  37 | train loss 0.3090 | val loss 0.2669 | val err mean  106.5 median  110.4 min | 15.6s
+  epoch  38 | train loss 0.3099 | val loss 0.2719 | val err mean  107.5 median  110.6 min | 15.6s
+  epoch  39 | train loss 0.3101 | val loss 0.2695 | val err mean  107.2 median  110.5 min | 15.6s
+  epoch  40 | train loss 0.3096 | val loss 0.2695 | val err mean  107.2 median  110.5 min | 15.6s
+[logged] trig encoding | raw linear | val mean err 100.64 min
+
+=== trig encoding | unit-normalised | MSE on (sin,cos)x2 ===
+  epoch   1 | train loss 0.9603 | val loss 0.8597 | val err mean  158.0 median  146.8 min | 15.6s
+  epoch   2 | train loss 0.7407 | val loss 0.7182 | val err mean  145.3 median  128.2 min | 15.6s
+  epoch   3 | train loss 0.6153 | val loss 0.8885 | val err mean  172.2 median  170.1 min | 15.6s
+  epoch   4 | train loss 0.5468 | val loss 0.5221 | val err mean  112.6 median   82.1 min | 15.6s
+  epoch   5 | train loss 0.4796 | val loss 0.4466 | val err mean  111.7 median  107.5 min | 15.6s
+  epoch   6 | train loss 0.4318 | val loss 0.4213 | val err mean  104.0 median   61.2 min | 15.6s
+  epoch   7 | train loss 0.4094 | val loss 0.4318 | val err mean  110.3 median  110.6 min | 15.6s
+  epoch   8 | train loss 0.3999 | val loss 0.4874 | val err mean  107.6 median   99.3 min | 15.6s
+  epoch   9 | train loss 0.3931 | val loss 0.4733 | val err mean  109.5 median   89.6 min | 15.6s
+  epoch  10 | train loss 0.3817 | val loss 0.3701 | val err mean   91.9 median   59.6 min | 15.6s
+  epoch  11 | train loss 0.3500 | val loss 0.3261 | val err mean   90.1 median   60.1 min | 15.6s
+  epoch  12 | train loss 0.3266 | val loss 1.0129 | val err mean  186.1 median  189.2 min | 15.6s
+  epoch  13 | train loss 0.3995 | val loss 0.3964 | val err mean   98.3 median   66.1 min | 15.6s
+  epoch  14 | train loss 0.3640 | val loss 0.3376 | val err mean   93.3 median   59.2 min | 15.6s
+  epoch  15 | train loss 0.3078 | val loss 0.2576 | val err mean   78.5 median   58.3 min | 15.6s
+  epoch  16 | train loss 0.2769 | val loss 0.2256 | val err mean   70.5 median   57.1 min | 15.6s
+  epoch  17 | train loss 0.2723 | val loss 0.2504 | val err mean   75.8 median   58.8 min | 15.6s
+  epoch  18 | train loss 0.2461 | val loss 0.1852 | val err mean   62.7 median   56.8 min | 15.6s
+  epoch  19 | train loss 0.2373 | val loss 0.1813 | val err mean   62.2 median   57.0 min | 15.6s
+  epoch  20 | train loss 0.2216 | val loss 0.1634 | val err mean   56.7 median   56.4 min | 15.6s
+  epoch  21 | train loss 0.2146 | val loss 0.1535 | val err mean   56.3 median   56.6 min | 15.6s
+  epoch  22 | train loss 0.1947 | val loss 0.1693 | val err mean   60.7 median   57.2 min | 15.6s
+  epoch  23 | train loss 0.1818 | val loss 0.1222 | val err mean   50.1 median   56.3 min | 15.6s
+  epoch  24 | train loss 0.1677 | val loss 0.0970 | val err mean   42.1 median   55.2 min | 15.6s
+  epoch  25 | train loss 0.1595 | val loss 0.1083 | val err mean   43.9 median   55.2 min | 15.6s
+  epoch  26 | train loss 0.1550 | val loss 0.0831 | val err mean   38.0 median   54.5 min | 15.6s
+  epoch  27 | train loss 0.1427 | val loss 0.1007 | val err mean   42.4 median   55.4 min | 15.6s
+  epoch  28 | train loss 0.1391 | val loss 0.0985 | val err mean   42.8 median   55.9 min | 15.6s
+  epoch  29 | train loss 0.1339 | val loss 0.0935 | val err mean   42.5 median   56.0 min | 15.6s
+  epoch  30 | train loss 0.1263 | val loss 0.0695 | val err mean   36.1 median   54.6 min | 15.6s
+  epoch  31 | train loss 0.1227 | val loss 0.0675 | val err mean   36.3 median   55.1 min | 15.6s
+  epoch  32 | train loss 0.1164 | val loss 0.0604 | val err mean   33.0 median    7.6 min | 15.6s
+  epoch  33 | train loss 0.1149 | val loss 0.0587 | val err mean   31.0 median    4.1 min | 15.6s
+  epoch  34 | train loss 0.1113 | val loss 0.0584 | val err mean   32.4 median    5.2 min | 15.6s
+  epoch  35 | train loss 0.1108 | val loss 0.0537 | val err mean   29.3 median    3.5 min | 15.5s
+  epoch  36 | train loss 0.1063 | val loss 0.0566 | val err mean   32.0 median    5.2 min | 15.6s
+  epoch  37 | train loss 0.1069 | val loss 0.0553 | val err mean   30.5 median    3.8 min | 15.6s
+  epoch  38 | train loss 0.1065 | val loss 0.0523 | val err mean   29.7 median    3.6 min | 15.6s
+  epoch  39 | train loss 0.1059 | val loss 0.0524 | val err mean   29.5 median    3.6 min | 15.5s
+  epoch  40 | train loss 0.1042 | val loss 0.0521 | val err mean   29.5 median    3.5 min | 15.6s
+[logged] trig encoding | unit-normalised | val mean err 29.31 min
+
+====================================================================================================
+COMPARISON (validation set only; all val_* columns are common-sense error in minutes)
+chance level: mean/median ~180 min, within-1 ~0.4%, within-5 ~1.5%, within-15 ~4.3%
+
+      approach               variant               loss  epochs  params  best_epoch  val_mean_err  val_median_err  val_within_1  val_within_5  val_within_15
+    multi-head hour cls + minute reg    CE + 2.0*minute      40  768845          40        24.623          17.099        0.0272        0.1372         0.4467
+ trig encoding       unit-normalised MSE on (sin,cos)x2      40  766532          35        29.307           3.483        0.1906        0.5411         0.5550
+    multi-head hour cls + minute reg    CE + 1.0*minute      40  768845          36        31.540          20.954        0.0311        0.1183         0.3572
+    multi-head hour cls + minute reg    CE + 0.5*minute      40  768845          38        43.550          26.652        0.0228        0.0956         0.2889
+    regression  total-minutes scalar                 l1      40  765761          39        64.554          44.780        0.0083        0.0567         0.1822
+    regression  total-minutes scalar           smoothl1      40  765761          40        72.744          57.519        0.0106        0.0544         0.1444
+    regression  total-minutes scalar                mse      40  765761          38        83.012          66.598        0.0050        0.0400         0.1272
+ trig encoding            raw linear MSE on (sin,cos)x2      40  766532          18       100.639          65.869        0.0139        0.0844         0.1328
+classification            24 classes       CrossEntropy      40  771672           5       177.154         174.000        0.0028        0.0128         0.0428
+classification           720 classes       CrossEntropy      40  950544          22       179.301         178.500        0.0044        0.0161         0.0467
+    multi-head hour cls + minute cls    CE + 0.5*minute      40  784008           1       181.206         182.000        0.0056        0.0178         0.0456
+    multi-head hour cls + minute cls    CE + 2.0*minute      40  784008           1       181.244         182.000        0.0056        0.0183         0.0450
+classification            60 classes       CrossEntropy      40  780924           2       182.017         183.500        0.0006        0.0094         0.0356
+classification            12 classes       CrossEntropy      40  768588           2       182.021         183.000        0.0050        0.0133         0.0433
+    multi-head hour cls + minute cls    CE + 1.0*minute      40  784008           2       182.188         184.000        0.0033        0.0189         0.0467
+
+Best variant per approach:
+      approach               variant               loss  epochs  params  best_epoch  val_mean_err  val_median_err  val_within_1  val_within_5  val_within_15
+classification            24 classes       CrossEntropy      40  771672           5       177.154         174.000        0.0028        0.0128         0.0428
+    multi-head hour cls + minute reg    CE + 2.0*minute      40  768845          40        24.623          17.099        0.0272        0.1372         0.4467
+    regression  total-minutes scalar                 l1      40  765761          39        64.554          44.780        0.0083        0.0567         0.1822
+ trig encoding       unit-normalised MSE on (sin,cos)x2      40  766532          35        29.307           3.483        0.1906        0.5411         0.5550
+
+Learning check (train loss / val loss, first -> last epoch):
+  classification | 12 classes                                  train 2.508 -> 2.485 | val 2.484 -> 2.486
+  classification | 24 classes                                  train 3.191 -> 3.178 | val 3.179 -> 3.179
+  classification | 60 classes                                  train 4.108 -> 4.094 | val 4.096 -> 4.097
+  classification | 720 classes                                 train 6.592 -> 6.575 | val 6.583 -> 6.609
+  regression | total-minutes scalar                            train 0.128 -> 0.007 | val 0.043 -> 0.009
+  multi-head | hour cls + minute cls                           train 10.703 -> 10.673 | val 10.673 -> 10.681
+  multi-head | hour cls + minute reg                           train 2.717 -> 0.868 | val 2.576 -> 0.787
+  trig encoding | raw linear                                   train 0.581 -> 0.310 | val 0.500 -> 0.269
+  trig encoding | unit-normalised                              train 0.960 -> 0.104 | val 0.860 -> 0.052
+
+saved to runs/part1: results_val.csv, histories.json, val_curves.png, checkpoints/

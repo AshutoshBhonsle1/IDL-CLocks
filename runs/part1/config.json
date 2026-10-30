@@ -5,13 +5,13 @@
  "out_dir": "runs/part1",
  "seed": 42,
  "max_train": 0,
- "epochs": 15,
+ "epochs": 40,
  "batch_size": 128,
  "lr": 0.001,
  "weight_decay": 0.0001,
  "pool": 4,
  "cudnn_benchmark": false,
- "mode": "sanity",
+ "mode": "run",
  "approaches": [
   "classification",
   "regression",
@@ -42,6 +42,6 @@
   0,
   1
  ],
- "overfit_n": 512,
- "overfit_epochs": 60
+ "overfit_n": 64,
+ "overfit_steps": 500
 }

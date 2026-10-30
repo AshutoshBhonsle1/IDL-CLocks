@@ -1,0 +1,16 @@
+approach,variant,loss,epochs,params,best_epoch,val_mean_err,val_median_err,val_within_1,val_within_5,val_within_15
+classification,12 classes,CrossEntropy,40,768588,2,182.021,183.0,0.005,0.0133,0.0433
+classification,24 classes,CrossEntropy,40,771672,5,177.154,174.0,0.0028,0.0128,0.0428
+classification,60 classes,CrossEntropy,40,780924,2,182.017,183.5,0.0006,0.0094,0.0356
+classification,720 classes,CrossEntropy,40,950544,22,179.301,178.5,0.0044,0.0161,0.0467
+regression,total-minutes scalar,mse,40,765761,38,83.012,66.598,0.005,0.04,0.1272
+regression,total-minutes scalar,l1,40,765761,39,64.554,44.78,0.0083,0.0567,0.1822
+regression,total-minutes scalar,smoothl1,40,765761,40,72.744,57.519,0.0106,0.0544,0.1444
+multi-head,hour cls + minute cls,CE + 0.5*minute,40,784008,1,181.206,182.0,0.0056,0.0178,0.0456
+multi-head,hour cls + minute cls,CE + 1.0*minute,40,784008,2,182.188,184.0,0.0033,0.0189,0.0467
+multi-head,hour cls + minute cls,CE + 2.0*minute,40,784008,1,181.244,182.0,0.0056,0.0183,0.045
+multi-head,hour cls + minute reg,CE + 0.5*minute,40,768845,38,43.55,26.652,0.0228,0.0956,0.2889
+multi-head,hour cls + minute reg,CE + 1.0*minute,40,768845,36,31.54,20.954,0.0311,0.1183,0.3572
+multi-head,hour cls + minute reg,CE + 2.0*minute,40,768845,40,24.623,17.099,0.0272,0.1372,0.4467
+trig encoding,raw linear,"MSE on (sin,cos)x2",40,766532,18,100.639,65.869,0.0139,0.0844,0.1328
+trig encoding,unit-normalised,"MSE on (sin,cos)x2",40,766532,35,29.307,3.483,0.1906,0.5411,0.555
