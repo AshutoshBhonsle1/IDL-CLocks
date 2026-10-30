@@ -1,0 +1,17 @@
+# Requirements for clock_part1.py (Task 2, Part 1)
+# Install:  pip install --no-cache-dir -r requirements.txt
+#
+# Only lower bounds are set, so pip keeps whatever compatible version is already installed
+# (this avoids re-downloading torch on a machine that already has it).
+#
+# torch: the default Linux wheel includes CUDA support. If torch.cuda.is_available() prints False
+# after installing, install the build matching `nvidia-smi` instead, e.g.:
+#   pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cu121
+
+torch>=1.12
+numpy>=1.22
+pandas>=1.5
+matplotlib>=3.5
+
+# optional: turn clock_part1.py back into a notebook (jupytext --to ipynb clock_part1.py)
+# jupytext
